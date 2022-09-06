@@ -55,6 +55,7 @@ const addMessage = (evt) =>{
 }
 
 const renderMessage = (listaMensajes) =>{
+    console.log(listaMensajes)
     let chat = document.getElementById('chat')
     let html = listaMensajes.map(msj => {
         return`<table class="table table-striped k col-3">
@@ -80,5 +81,6 @@ socket.on('productos-server', listaProductos =>{
 })
 socket.on('mensajes-server', listaMensajes =>{
     renderMessage(listaMensajes)
+    
 }) 
 

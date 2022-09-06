@@ -52,7 +52,6 @@ class Contenedor {
     async getAllProductos () {
         try {
             const productos = await knexMariaDB.from('Productos').select('*')
-            console.log(productos)
             return productos
         } catch (error) {
             console.log(error);
@@ -70,14 +69,14 @@ class Contenedor {
     }
     async getAllMensajes () {
         try {
-            const mensajes = await knexSqlite.from('Mensajes').select('*')
-            console.log(mensajes)
-            return mensajes
+            const msje = await knexSqlite.from('Mensajes').select('*')
+            return msje
         } catch (error) {
             console.log(error);
             throw error
         }
     }
+
     async save(title,price,thumbnail){
         let newProduct = {
             title,
@@ -135,5 +134,8 @@ class Contenedor {
             console.log(err)
         }
     }
+
 }
+
+
 module.exports = Contenedor

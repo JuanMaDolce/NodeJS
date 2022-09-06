@@ -15,26 +15,32 @@ app.set('views', './views')
 
 
 app.get('/', (req,res) =>{
-    res.render('main',{listaProductos,listaMensajes})
+    res.render('main')
 })
 
-/* contenedor.crearTablaMensajes('Mensajes')
-contenedor.crearTablaProductos('Productos')  */
-const listaMensajes = contenedor.getAllMensajes()
-const listaProductos = contenedor.getAllProductos()
+/* contenedor.crearTablaMensajes('Mensajes') */
+/* contenedor.crearTablaProductos('Productos') */ 
 
 io.on('connection', socket => {
-    console.log('User connected') 
+        console.log('User connected') 
+    
+        socket.on('chat-nuevo', mensajes =>{
+            contenedor.guardarMensaje(mensajes)
+            const listaMensajes = contenedor.getAllMensajes()
+            listaMensajes.then(val => io.sockets.emit('mensajes-server', val))
+        })
+        
+        socket.on('producto-nuevo', producto =>{
+            contenedor.guardarProducto(producto)
+            const listaProductos = contenedor.getAllProductos()
+            listaProductos.then(val => io.sockets.emit('productos-server', val))
+        })
+    
+    })
 
-socket.on('producto-nuevo', producto =>{
-        contenedor.guardarProducto(producto)
-        io.sockets.emit('productos-server', listaProductos)
-    })
-    socket.on('chat-nuevo', mensajes =>{
-        contenedor.guardarMensaje(mensajes)
-        io.sockets.emit('mensajes-server', listaMensajes)
-    })
-})
+
+
+
 
 serverHttp.listen(3000, () =>{
     console.log('server running on port 3000')
