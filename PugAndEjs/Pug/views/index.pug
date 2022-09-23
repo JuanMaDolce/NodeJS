@@ -1,0 +1,18 @@
+html
+    head
+        title='App con Pug'
+    body
+        h1='Lista de Productos'
+            if productos
+            ul
+            each val in productos
+                h3='Producto'
+                li= val.title
+                h3='Precio'
+                li= val.price
+                h3='Imagen'
+                li
+                    img(src=val.thumbnail, alt="imagen") 
+            else
+                h2='No hay productos'
+        a(href='http://localhost:4000/') Ingresá un nuevo producto

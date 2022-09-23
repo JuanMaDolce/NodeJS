@@ -1,0 +1,2 @@
+Consdierando los tres motores de planitllas; me parece el mejor EJS, la sintaxis si bien es un poco más compleja, me parece que se asemeja más a los lenguajes que estamos utilizando, como JS o bien podría asemejarse en algunos aspectos a REACT, lo cual en la páctica, y aún sin utilizarlo diariamente, podría serme más facil de adaptar.
+De todas forma pug tiene una sintaxis "sencilla" que hace que no sea una mala opción.

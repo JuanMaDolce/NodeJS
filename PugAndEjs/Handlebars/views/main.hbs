@@ -1,0 +1,18 @@
+<h1>Lista de productos</h1>
+{{#if listExist}}
+    <ul>
+        {{#each list}}
+            <h2>Producto</h2>
+            <li>{{title}}</li>
+            <h2>Precio</h2>
+            <li>${{price}}</li>
+            <h2>Imagen</h2>
+            <li>
+                <img src={{thumbnail}} alt="imagen">
+            </li>
+        {{/each}}
+    </ul>
+{{else}}
+    <h2>NO HAY PRODUCTOS</h2>
+{{/if}}
+<a href="http://localhost:4000/">Agregar un nuevo Producto</a>

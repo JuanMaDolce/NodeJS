@@ -1,0 +1,14 @@
+#user{
+    color: blue
+}
+#timer{
+    color: brown;
+    font-weight: normal;
+}
+#message{
+    color: green;
+    font-family: italic;
+}
+#avatar{
+    width: 100px
+}

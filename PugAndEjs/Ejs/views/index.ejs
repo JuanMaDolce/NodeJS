@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Ejs</title>
+</head>
+<body>
+    <% const estilo='color:blue' %>
+    <h2>Lista de Productos</h2>
+    <% if(productos.length > 0) { %>
+        <ul>
+            <% productos.forEach(prod => { %>
+                <li>Producto <%= prod.title %></li>
+                <li>Precio <%= prod.price %></li>
+                <li>
+                    <img src=<%= prod.thumbnail %> alt="imagen">
+                </li>
+            <% }) %>
+        </ul>
+    <% }else{ %>
+        <h2>No hay productos</h2>
+    <% } %>
+    <a href="http://localhost:4000/">Agregar un nuevo Producto</a>
+</body>
+</html>

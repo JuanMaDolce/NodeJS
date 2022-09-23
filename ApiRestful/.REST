@@ -1,0 +1,20 @@
+//DELETE http://localhost:8080/api/productos/4 HTTP/1.1
+
+//POST http://localhost:8080/api/productos HTTP/1.1
+//content-type:application/json
+
+//{
+//    "title": "",
+//    "price": "",
+//    "thumbnail": ""
+//}
+
+PUT http://localhost:8080/api/productos/11 HTTP/1.1
+content-type:application/json
+
+{
+    "title": "Papa",
+    "price": "Manzana",
+    "thumbnail": "Banana"
+}
+
