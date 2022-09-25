@@ -1,6 +1,6 @@
 const fs = require('fs')
 const normalizr = require('normalizr')
-const {normalize,denormalize,schema} = normalizr
+const {normalize,schema} = normalizr
 
 const util = require('util')
 
@@ -9,28 +9,12 @@ const print = (obj) =>{
 }
 
 
-let dataFile = fs.readFileSync("./DB/mensajes.txt", "utf-8")
-let dataFileParse = JSON.parse(dataFile) 
-
-
-
-
-
-
-
-    const authorSchema = new schema.Entity('id')
-    
-    const mensajesSchema = new schema.Entity('mensaje')
-
-    const postSchema = new schema.Entity('post',{
-        author: authorSchema,
-        text: [mensajesSchema]
-    })
-
-    const normalizedMsje = normalize( dataFileParse, postSchema)
-
-    console.log(print(normalizedMsje))
-
+const authorSchema = new schema.Entity('author', {}, {idAttribute: "id"});
+const comentSchema = new schema.Entity('text');
+const postSchema =[{
+    author: authorSchema,
+    text: comentSchema
+}]
 
 
 class Contenedor {
@@ -47,33 +31,21 @@ class Contenedor {
             fs.writeFileSync("./DB/mensajes.txt", JSON.stringify([post], null, 2))
 
     }}
-/*     async getAllMensajes () {
+    async getAllMensajes () {
         let dataFile = fs.readFileSync("./DB/mensajes.txt", "utf-8")
         let dataFileParse = JSON.parse(dataFile) 
-
-
-
-
 
         try {
             const msje = await dataFileParse
 
-            const authorSchema = new schema.Entity('id')
-            
-            const postSchema = new schema.Entity('post',{
-                author: [authorSchema]
-            })
+            const normalizedMsje = normalize(msje, postSchema)
 
-            const normalizedMsje = normalize(await msje, postSchema)
-
-            console.log(print(normalizedMsje))
-
-            return msje
+            return normalizedMsje
         } catch (error) {
             console.log(error);
             throw error
         }
-    } */
+    }
 }
 
 

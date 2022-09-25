@@ -3,6 +3,14 @@ const { Server: ServerHttp } = require('http')
 const { Server: ServerIo } = require('socket.io')
 const Contenedor = require('./contenedor')
 const productosFaker = require('./faker')
+const normalizr = require('normalizr')
+const {denormalize,schema} = normalizr
+
+const util = require('util')
+
+const print = (obj) =>{
+    console.log(util.inspect(obj, false, 12, true))
+}
 
 const app = express()
 const serverHttp = new ServerHttp(app)

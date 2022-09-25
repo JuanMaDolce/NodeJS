@@ -1,5 +1,4 @@
-const socket = io()
-
+const socket = io().connect()
 
 const addProduct = (evt) =>{
     let producto = 0
@@ -11,7 +10,7 @@ const render = (listaProductos) =>{
     let listado = document.getElementById('listado')
     let html = listaProductos.map(prod => {
         return`<table class="table table-striped     col-1 mb-2">
-                <thead>
+        <thead>
                     <tr>
                     <th scope="col">Producto</th>
                     <th scope="col">Precio</th>
@@ -27,7 +26,7 @@ const render = (listaProductos) =>{
                 </tbody>
                 </table>`
     })
-    listado.innerHTML = html.join(' ') 
+    listado.innerHTML = html.join(' ')
 }  
 
 
@@ -42,49 +41,62 @@ const addMessage = (evt) =>{
     const mensaje = document.getElementById('mensaje').value
     const time = new Date()
     const horario = time.toLocaleString()
-    const post ={ 
-                id,
-                nombre,
-                apellido,
-                edad,
-                alias,
-                avatar,
-                mensaje,
-                horario
-            }
+    const post = {
+        author: {
+            id,
+            nombre, 
+            apellido, 
+            edad, 
+            alias,
+            avatar
+        },
+        text: mensaje,
+        horario
+    }
     socket.emit('chat-nuevo', post)
     return false
 }
 
 const renderMessage = (listaMensajes) =>{
-    console.log(listaMensajes)
+    
     let chat = document.getElementById('chat')
-    let html = listaMensajes.map(msj => {
+    let html = listaMensajes.result.map(msj => {
         return`<table class="table table-striped k col-3">
                 <thead>
                     <tr>
                     <th scope="col-3">Usuario</th>
                     <th scope="col-3">Mensaje</th>
-                    <th scope="col-3">Avatar</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                    <th scope="row"><p id="user">${msj.id}</p><p id="timer">${msj.horario}</p></th>
-                    <td><p id="message">${msj.text}</p></td>
-                    <td><img id="avatar" src=${msj.avatar} alt="Imagen"></td>                   
+                    <th scope="row"><p id="user">${msj.author}</p><p id="timer">${msj.horario}</p></th>
+                    <td><p id="message">${msj.text}</p></td>            
                     </tr>
                 </tbody>
                 </table>`
     })
     chat.innerHTML = html.join(' ')
+
+    const authorSchema = new normalizr.schema.Entity('author', {}, {idAttribute: "id"});
+    const comentSchema = new normalizr.schema.Entity('text');
+    const postSchema =[{
+        author: authorSchema,
+        text: comentSchema
+    }]
+
+    const denormalizeMensajes = normalizr.denormalize(listaMensajes.result, postSchema, listaMensajes.entities)
+
+    const porcentaje = 100 - (( JSON.stringify(listaMensajes).length * 100) / JSON.stringify(denormalizeMensajes).length)
+
+    document.getElementById('porcenaje').innerHTML = `%${porcentaje.toFixed(2)}`
 }
+
 
 socket.on('productos-server', listaProductos =>{
     render(listaProductos)
 }) 
 socket.on('mensajes-server', listaMensajes =>{
     renderMessage(listaMensajes)
-    
 }) 
 
