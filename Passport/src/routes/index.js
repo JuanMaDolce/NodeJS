@@ -20,7 +20,7 @@ passport.use('ingreso',  new LocalStrategy(
         if(!Contenedor.validarPassword(usuario, password)){
             return done(null, false, {message: 'Password incorrecto'})
         } 
-        done(null, usuario)
+        return done(null, usuario)
     }
 ))
 
@@ -65,7 +65,9 @@ router.post('/ingreso', passport.authenticate('ingreso',{
 
 router.get('/home', Contenedor.checkAuth , (req,res)=>{
     try{
-        res.status(200).render('home')
+        res.status(200).render('home',{
+            name: req.user.username
+        })
     } catch (err) {
         res.status(500).json({
             success: false,
