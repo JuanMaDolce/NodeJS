@@ -3,6 +3,7 @@ const Users = require('../modelos/esquemas')
 const {fork} = require('child_process')
 
 
+
 class Contenedor {
     static guardarUsuario = async (username, password) =>{
         try{
@@ -69,7 +70,6 @@ class Contenedor {
                 if(msg == 'listo'){
                     forked.send(cant)
                 } else {
-                    console.log(msg)
                     return msg
                 }
             })
@@ -78,7 +78,6 @@ class Contenedor {
                 if(msg == 'listo'){
                     forked.send('hola')
                 } else {
-                    console.log(msg)
                     return msg
                 }
             })
