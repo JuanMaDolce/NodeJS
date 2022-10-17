@@ -18,7 +18,7 @@ routerProcess.get('/api/randoms', (req, res)=>{
             if(msg == 'listo'){
                 forked.send(cant)
             } else {
-                res.status(200).send(msg)
+                res.status(200).json(msg)
             }
         })
     } else {
@@ -26,7 +26,7 @@ routerProcess.get('/api/randoms', (req, res)=>{
             if(msg == 'listo'){
                 forked.send('hola')
             } else {
-                res.status(200).send(msg)
+                res.status(200).json(msg)
             }
         })
     }
