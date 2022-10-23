@@ -11,7 +11,6 @@ routerProcess.get('/info', (req, res)=>{
 
 routerProcess.get('/api/randoms', (req, res)=>{
     const cant = req.query.cant
-/* res.status(200).json( Contenedor.random(Number(cant)))  */
      const forked = fork('src/child/child.js')
      if(!isNaN(cant) == true ){
         forked.on('message', msg =>{
