@@ -1,0 +1,11 @@
+node server.js 8081 CLUSTER
+
+node server.js 8081 FORK
+
+forever start server.js 8081
+
+pm2 start server.js --name="Server1" --watch -- 8080
+
+pm2 start server.js --name="Server2" --watch -i max -- 8081
+
+
