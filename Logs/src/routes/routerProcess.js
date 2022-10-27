@@ -1,11 +1,13 @@
 const express = require('express')
 const Contenedor = require('../contenedor/contenedor')
 const {fork} = require('child_process')
+const compression = require('compression')
 
 const routerProcess = express.Router()
 
 
-routerProcess.get('/info', (req, res)=>{
+
+routerProcess.get('/info', compression(), (req, res)=>{
     res.status(500).json(Contenedor.process())
 })
 

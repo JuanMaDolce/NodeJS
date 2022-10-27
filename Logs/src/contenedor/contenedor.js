@@ -5,6 +5,7 @@ const numCPUs = require('os').cpus().length
 
 
 
+
 class Contenedor {
     static guardarUsuario = async (username, password) =>{
         try{
