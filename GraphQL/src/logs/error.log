@@ -1,0 +1,25 @@
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{}\"","value":{},"valueType":"Object"}
