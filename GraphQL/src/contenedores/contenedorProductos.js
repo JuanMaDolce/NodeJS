@@ -13,7 +13,9 @@ class ContenedorProductos{
         }
     }
 
-    save = async (title,price,thumbnail) =>{
+    save = async (datos) =>{
+        const {title,price,thumbnail} = JSON.parse(JSON.stringify(datos.datos))
+
         let product = new Productos({
             title,
             price,
@@ -27,7 +29,8 @@ class ContenedorProductos{
         }
     }
 
-    getById = async (id) => {        
+    getById = async (id) => {  
+        
         try{
             let product = await Productos.findById(id)
             return product
@@ -36,7 +39,8 @@ class ContenedorProductos{
         }
     }
 
-    upload = async (id,title,price,thumbnail) => {
+    upload = async (id,datos) => {
+        const {title,price,thumbnail} = JSON.parse(JSON.stringify(datos.datos))
         try{
             let product = await Productos.findByIdAndUpdate(id, {title: title, price: price, thumbnail: thumbnail})
             return product

@@ -19,19 +19,19 @@ class Producto {
     thumbnail: String
   }
   type Producto {
-    _id: ID,
+    _id: String,
     title: String,
     price: Int,
     thumbnail: String
   }
   type Query {
-    getProducto(id: ID): Producto,
+    getProducto(_id: String, valor: String): Producto,
     getProductos(campo: String, valor: String): [Producto],
   }
   type Mutation {
     crearProducto(datos: ProductoInput ): Producto,
-    updateProducto(id: ID, datos: ProductoInput): Producto,
-    deleteProducto(id: ID): Producto
+    updateProducto(_id: String, valor: String, datos: ProductoInput): Producto,
+    deleteProducto(_id: String, valor: String): Producto
   }
 `) 
 
