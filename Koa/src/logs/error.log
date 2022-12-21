@@ -1,0 +1,17 @@
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{ id: '63964bbb3aa4b04cc6cf803d' }\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{ id: '63964bbb3aa4b04cc6cf803d' }\"","value":{"id":"63964bbb3aa4b04cc6cf803d"},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{ id: '63964bbb3aa4b04cc6cf803d' }\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{ id: '63964bbb3aa4b04cc6cf803d' }\"","value":{"id":"63964bbb3aa4b04cc6cf803d"},"valueType":"Object"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"s\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"s\"","value":"s","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"s\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"s\"","value":"s","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"s\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"s\"","value":"s","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"s\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"s\"","value":"s","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"as\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"as\"","value":"as","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"as\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"as\"","value":"as","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"as\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"as\"","value":"as","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"as\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"as\"","value":"as","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"as\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"as\"","value":"as","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"{ id: '6366b4adc8bbce72c9350c23' }\" (type Object) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"{ id: '6366b4adc8bbce72c9350c23' }\"","value":{"id":"6366b4adc8bbce72c9350c23"},"valueType":"Object"}

@@ -1,0 +1,17 @@
+// POST http://localhost:8080/api/productos/ HTTP/1.1
+
+// Content-Type: application/json
+
+//{
+  //  "title": "Televisor"  
+//}
+PUT http://localhost:8080/api/productos/63964af53aa4b04cc6cf8035 HTTP/1.1
+content-type:application/json
+
+{
+    "title": "Celular",
+    "price": 200,
+    "thumbnail": "Regalado"
+}
+
+// DELETE http://localhost:8080/api/productos/63964af53aa4b04cc6cf8032 HTTP/1.1
