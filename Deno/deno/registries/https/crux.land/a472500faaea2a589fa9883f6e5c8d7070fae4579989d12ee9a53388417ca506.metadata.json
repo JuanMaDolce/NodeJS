@@ -1,0 +1,14 @@
+{
+  "headers": {
+    "vary": "Accept-Encoding",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 27 Dec 2022 00:28:20 GMT",
+    "server": "deno/gcp-southamerica-west1",
+    "via": "http/2 edgeproxy"
+  },
+  "url": "https://crux.land/api/completions",
+  "now": {
+    "secs_since_epoch": 1672100901,
+    "nanos_since_epoch": 407514400
+  }
+}
