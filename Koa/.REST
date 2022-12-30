@@ -16,4 +16,4 @@
 //  "thumbnail":"sasa"
 //}
 
-//DELETE http://localhost:4000/api/productos/63aea9f19cf487b8039db9a7 HTTP/1.1
+DELETE http://localhost:4000/api/productos/63aeb045054fd5fd651e721b HTTP/1.1
