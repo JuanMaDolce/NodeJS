@@ -1,8 +1,6 @@
 /* import express from 'express' */
 
 import Koa from 'koa' 
-import json from 'koa-json'
-import bodyParser from 'koa-bodyparser'
 import {koaBody} from 'koa-body'
 import connectDB from './src/conexionDB/mongoDB.js'
 import * as dotenv from 'dotenv'
@@ -18,8 +16,12 @@ connectDB()
 const app = new Koa
 
 app.use(koaBody())
-app.use(json())
-app.use(bodyParser())
+
+app
+    .use(routerProductos.routes())
+    .use(routerProductos.allowedMethods());
+
+export default app
 
 
 
@@ -48,6 +50,3 @@ app.use(passport.session()) */
 
 /* app.use('/public', express.static(`./src/public`)) */
 
-app.use(routerProductos.routes()).use(routerProductos.allowedMethods());
-
-export default app

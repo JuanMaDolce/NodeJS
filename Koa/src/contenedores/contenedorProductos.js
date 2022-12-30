@@ -41,10 +41,11 @@ class ContenedorProductos{
         }
     }
 
-    upload = async (id,title,price,thumbnail) => {
+    upload = async (id,producto) => {
+        const {title,price,thumbnail} = producto
         try{
-            let product = await Productos.findByIdAndUpdate(id, {title: title, price: price, thumbnail: thumbnail})
-            return product
+            let productoMod = await Productos.findByIdAndUpdate(id, {title: title, price: price, thumbnail: thumbnail})
+            return productoMod
         } catch (err){
             logger.error(err)
         }

@@ -1,17 +1,19 @@
-// POST http://localhost:8080/api/productos/ HTTP/1.1
+//PUT http://localhost:4000/api/productos/63aea9f19cf487b8039db9a7 HTTP/1.1 
+//content-type: application/json
 
-// Content-Type: application/json
-
-//{
-  //  "title": "Televisor"  
+//{  
+//  "title":"pap",
+//  "price":"1000",
+//  "thumbnail":"sasa"
 //}
-PUT http://localhost:8080/api/productos/63964af53aa4b04cc6cf8035 HTTP/1.1
-content-type:application/json
 
-{
-    "title": "Celular",
-    "price": 200,
-    "thumbnail": "Regalado"
-}
+//POST http://localhost:4000/api/productos/ HTTP/1.1 
+//content-type: application/json
 
-// DELETE http://localhost:8080/api/productos/63964af53aa4b04cc6cf8032 HTTP/1.1
+//{  
+//  "title":"pap",
+//  "price":"200",
+//  "thumbnail":"sasa"
+//}
+
+//DELETE http://localhost:4000/api/productos/63aea9f19cf487b8039db9a7 HTTP/1.1
