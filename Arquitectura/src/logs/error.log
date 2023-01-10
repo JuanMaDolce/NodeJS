@@ -3,3 +3,5 @@
 {"level":"error","message":"Users validation failed: password: Path `password` is required."}
 {"level":"error","message":"Users validation failed: password: Path `password` is required."}
 {"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"code":"ESOCKET","command":"CONN","level":"error"}

@@ -1,0 +1,63 @@
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"level":"error","message":"Users validation failed: password: Path `password` is required."}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"level":"error"}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"papa\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"papa\"","value":"papa","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"papa\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"papa\"","value":"papa","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"papa\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"papa\"","value":"papa","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"papa\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"papa\"","value":"papa","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"papa\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"papa\"","value":"papa","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"papa\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"papa\"","value":"papa","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"papa\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"papa\"","value":"papa","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"papa\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"papa\"","value":"papa","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"papa\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"papa\"","value":"papa","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"papa\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"papa\"","value":"papa","valueType":"string"}
+{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"papa\" (type string) at path \"_id\" for model \"Productos\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"papa\"","value":"papa","valueType":"string"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":"7fffffff0000000000000015","maxSetVersion":1,"servers":{},"setName":"atlas-2eulcl-shard-0","stale":false,"type":"ReplicaSetNoPrimary"}}
+{"level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":"7fffffff0000000000000015","maxSetVersion":1,"servers":{},"setName":"atlas-2eulcl-shard-0","stale":false,"type":"ReplicaSetNoPrimary"}}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":"ESOCKET","command":"CONN","level":"error"}
+{"level":"error"}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":20003,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/20003","status":401}
+{"code":"ESOCKET","command":"CONN","level":"error"}

@@ -17,7 +17,6 @@ routerProductos.get('/:id', async (req,res) =>{
 
 routerProductos.post('/', async (req,res) =>{
     const {title,price,thumbnail} = req.body
-
     const product = await apiProductos.save(title,price,thumbnail)
     res.send(product)
 })

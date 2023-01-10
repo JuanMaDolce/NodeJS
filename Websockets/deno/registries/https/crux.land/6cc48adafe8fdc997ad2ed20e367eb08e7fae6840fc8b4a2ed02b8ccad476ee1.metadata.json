@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "server": "deno/gcp-southamerica-west1",
+    "cache-control": "max-age=86400",
+    "vary": "Accept-Encoding",
+    "via": "http/2 edgeproxy",
+    "date": "Thu, 05 Jan 2023 00:20:17 GMT",
+    "content-type": "application/json; charset=utf-8"
+  },
+  "url": "https://crux.land/.well-known/deno-import-intellisense.json",
+  "now": {
+    "secs_since_epoch": 1672878019,
+    "nanos_since_epoch": 464807800
+  }
+}
