@@ -1,15 +1,15 @@
 //API PRODUCTOS ------------------------------------------------------>
 
-// POST http://localhost:8080/api/productos HTTP/1.1 
-// content-type:application/json
+//POST http://localhost:8080/api/productos HTTP/1.1 
+//content-type:application/json
 
-// {"title": "Televisor","price": 100,"thumbnail": "promo", "categoria":"Eletrodomestico"}
-//PUT http://localhost:8080/api/productos/63bb49d5720d4da7bbbd88c2 HTTP/1.1 
+//{"title": "caja","price": 100,"thumbnail": "h", "categoria":"cosa"}
+//PUT http://localhost:8080/api/productos/63cbf8c68f4e703408385315 HTTP/1.1 
 //content-type:application/json
 
 //{  "title": "Celular", "price": 200,  "thumbnail": "Regalado","categoria":"papa"}
 
-// DELETE http://localhost:8080/api/productos/632248f0ef4411f37d9ee9c5 HTTP/1.1
+//DELETE http://localhost:8080/api/productos/63cbf8c68f4e703408385315 HTTP/1.1
 
 // API CARRITO ----------------------------------------------------------->
 
