@@ -13,14 +13,14 @@
 
 // API CARRITO ----------------------------------------------------------->
 
-//POST http://localhost:8080/api/carrito HTTP/1.1 
+// POST http://localhost:8080/api/carrito HTTP/1.1 
 //content-type:application/json
 
 //{"email": "email","direccion": "direccion"}
 
-//DELETE http://localhost:8080/api/carrito/63226623304f2d65652e7ce7 HTTP/1.1
+//DELETE http://localhost:8080/api/carrito/63bb640286d2a76b2b485e72 HTTP/1.1
 
 //POST http://localhost:8080/api/carrito/6366b4adc8bbce72c9350c23/productos HTTP/1.1
 //content-type:application/json
 
-// DELETE http://localhost:8080/api/carrito/63239e8bfa76e6cc963cbccc/productos/63224923ef4411f37d9ee9c9 HTTP/1.1
+//DELETE http://localhost:8080/api/carrito/63cbfdd2856dbe67431c74f0/productos/6366b4adc8bbce72c9350c23 HTTP/1.1

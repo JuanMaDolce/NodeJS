@@ -1,5 +1,4 @@
 import express from 'express'
-import { apiProductos } from '../daos/index.js'
 import { getProductos, getByID, getByCategoria, postProducto, modProducto, borrarProducto} from '../controllers/productController.js'
 
 const {Router} = express

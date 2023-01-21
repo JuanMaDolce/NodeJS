@@ -102,7 +102,9 @@ class ContenedorCarrito{
 
             const products = await cartFind.productos
 
-            const newCart =  await Carrito.findByIdAndUpdate(id, {productos: products.filter(p => p._id != id_prod)})
+            await Carrito.findByIdAndUpdate(id, {productos: products.filter(p => p._id != id_prod)})
+
+            const newCart = await Carrito.findById(id)
 
             return newCart
 
