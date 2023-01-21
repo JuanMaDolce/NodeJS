@@ -8,9 +8,9 @@ const routerCarrito = Router()
 
 // Visualización del carrito por pedido o los productos dentro del carrito
 
-routerCarrito.get('/', getCarritos)
+routerCarrito.get('/', ContenedorSession.checkAuth, getCarritos)
 
-routerCarrito.get('/:id/productos', getCarritoById)
+routerCarrito.get('/:id/productos', ContenedorSession.checkAuth, getCarritoById)
 
 // Creación del carrito, pedido o ingreso de productos al carrito por ID
 

@@ -1,14 +1,14 @@
 import nodemailer from 'nodemailer'
 import logger from '../logs/logs.js';
 
-const TEST_MAIL = 'emily.auer83@ethereal.email'
+const TEST_MAIL = 'rachael22@ethereal.email'
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
     port: 587,
     auth: {
         user: TEST_MAIL,
-        pass: 'bSZAH9U1b9Rg7rwTxT'
+        pass: 'zK2bTkdM2BknArh2ym'
     }
 });
 

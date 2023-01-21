@@ -50,7 +50,7 @@ class ContenedorSession {
         if(req.isAuthenticated()) {
             next()
         } else {
-            res.redirect('ingreso')
+            res.redirect(`http://localhost:${process.env.PORT}/ingreso`)
         }
     }
     static checkAuthCart = (req, res, next) =>{

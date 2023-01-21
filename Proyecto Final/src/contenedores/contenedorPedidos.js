@@ -3,8 +3,14 @@ import Orden from "../utils/OrdenModule.js"
 class Pedidos {
 
     static getPedidos = async () => {
-        const pedidos = await Orden.find()
-        return pedidos
+        try{
+            const pedidos = await Orden.find()
+            return pedidos
+        }catch{
+            return 'No hay pedidos!'
+        }
+
+
     }
 
     static getByIdPedidos = async (id) =>{
